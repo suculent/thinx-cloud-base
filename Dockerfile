@@ -1,4 +1,4 @@
-FROM node:19.6.1-alpine3.16
+FROM node:current-alpine3.16
 
 LABEL maintainer="Matej Sychra <suculent@me.com>"
 
