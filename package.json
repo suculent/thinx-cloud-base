@@ -1,6 +1,6 @@
 {
   "name": "thinx-base",
-  "version": "1.7.2075",
+  "version": "1.9.2491",
   "description": "THiNX IoT Device Management API Base Image",
   "bugs": {
     "url": "https://github.com/suculent/thinx-device-api/issues"
@@ -24,7 +24,7 @@
   "dependencies": {
     "@slack/rtm-api": "^5.0.5",
     "@slack/web-api": "^5.15.0",
-    "@snyk/protect": "^1.657.0",
+    "@snyk/protect": "^1.1242.0",
     "async": "^3.2.2",
     "base-64": "^0.1.0",
     "bcrypt": "^5.0.0",
