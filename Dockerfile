@@ -1,6 +1,7 @@
-FROM node:19.6.1-alpine3.16
+FROM node:21-alpine3.18
 
 LABEL maintainer="Matej Sychra <suculent@me.com>"
+LABEL name="THiNX Base" version="1.9.2451"
 
 # RUN adduser --system --disabled-password --shell /bin/bash thinx
 
