@@ -8,6 +8,10 @@ export OWNER="thinxcloud"
 
 echo "Will update image with tag ${TAG}"
 
+rm -rf ./node_modules/
+rm -rf ./package-lock.json
+npm install . --only-prod && npm audit fix
+
 docker build -t $OWNER/base:alpine .
 
 docker push $OWNER/base:alpine
