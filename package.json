@@ -22,7 +22,7 @@
     "postpublish": "git push origin --tags"
   },
   "dependencies": {
-    "@slack/rtm-api": "^6.1.1",
+    "@slack/rtm-api": "^6.2.1",
     "@slack/web-api": "^6.9.1",
     "@snyk/protect": "^1.1242.0",
     "async": "^3.2.2",
