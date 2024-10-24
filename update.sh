@@ -12,6 +12,6 @@ rm -rf ./node_modules/
 rm -rf ./package-lock.json
 npm install . --only-prod && npm audit fix
 
-docker build -t $OWNER/base:alpine .
+docker buildx build --platform=linux/amd64 -t $OWNER/base:alpine .
 
 docker push $OWNER/base:alpine
