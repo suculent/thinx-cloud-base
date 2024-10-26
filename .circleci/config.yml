@@ -2,7 +2,11 @@ version: 2.1
 
 orbs: 
   docker: circleci/docker@2.8.0
+<<<<<<< HEAD
   ggshield: gitguardian/ggshield@1.1.0
+=======
+  ggshield: gitguardian/ggshield@1.1.4
+>>>>>>> thinx-staging
 
 workflows:
   build-and-publish:
