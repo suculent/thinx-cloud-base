@@ -1,4 +1,4 @@
-FROM node:24-alpine3.20
+FROM node:24-alpine3.22
 
 LABEL maintainer="Matej Sychra <suculent@me.com>"
 LABEL name="THiNX Base" version="1.9.2718"
