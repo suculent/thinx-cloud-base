@@ -115,6 +115,7 @@
     "minimist": "1.2.7",
     "moment": "2.29.4",
     "netmask": "2.0.2",
+    "path-to-regexp": "8.4.0",
     "proxy-agent": "4.0.1",
     "string-width": "4.2.3",
     "strip-ansi": "6.0.1",
