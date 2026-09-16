@@ -108,11 +108,15 @@ echo "▶ Pre-build digest: $PRE_DIGEST"
 #     `npm version patch --no-git-tag-version` mutates the version field
 #     and (if package-lock.json exists) the lockfile, with NO auto-commit
 #     and NO auto-tag — this script owns the commit boundary.
+#     `--ignore-scripts` skips the (pre|post)version lifecycle hooks: the
+#     legacy `"version": "npm run npm-auto-version"` hook referenced a
+#     script that never existed and aborted every run with
+#     "Missing script: npm-auto-version" AFTER package.json was mutated.
 # -----------------------------------------------------------------------------
 pushd "$REPO_ROOT" >/dev/null
 BEFORE_VERSION="$(node -p "require('./package.json').version")"
 if [[ $DRY_RUN -eq 0 ]]; then
-  npm version patch --no-git-tag-version >/dev/null
+  npm version patch --no-git-tag-version --ignore-scripts >/dev/null
 fi
 AFTER_VERSION="$(node -p "require('./package.json').version")"
 echo "▶ Version bump: $BEFORE_VERSION → $AFTER_VERSION"

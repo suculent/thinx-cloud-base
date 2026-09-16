@@ -1,6 +1,6 @@
 {
   "name": "thinx-base",
-  "version": "1.9.2581",
+  "version": "1.9.2584",
   "description": "THiNX IoT Device Management API Base Image",
   "bugs": {
     "url": "https://github.com/suculent/thinx-device-api/issues"
@@ -18,7 +18,6 @@
     "test": "nyc jasmine; nyc report --reporter=text-lcov > lcov.info && cat lcov.info | coveralls",
     "coverage": "npm run mocha",
     "mocha": "mocha spec/jasmine --delay=3000 --exit --timeout=5000; nyc report --reporter=text-lcov > lcov.info && cat lcov.info | coveralls",
-    "version": "npm run npm-auto-version",
     "postpublish": "git push origin --tags"
   },
   "dependencies": {
@@ -55,7 +54,7 @@
     "moment-timezone": "0.6.0",
     "morgan": "^1.10.1",
     "mqtt": "^5.14.1",
-    "nano": "^10.1.4",
+    "nano": "^11.0.7",
     "nocache": "^4.0.0",
     "node-forge": "^1.4.0",
     "node-schedule": "^2.1.1",
