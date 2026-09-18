@@ -1,4 +1,4 @@
-FROM node:26-alpine3.23
+FROM dhi.io/node:26-alpine3.24-dev
 
 LABEL maintainer="Matej Sychra <suculent@me.com>"
 LABEL name="THiNX Base" version="1.9.2866"
