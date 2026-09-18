@@ -9,7 +9,7 @@ LABEL name="THiNX Base" version="1.9.2866"
 
 RUN apk add --update --no-cache openssh-client git jq zip curl bash ca-certificates openssl
 
-ENV VER="20.10.21"
+ENV VER="29.8.1"
 RUN curl -sL -o /tmp/docker-$VER.tgz https://download.docker.com/linux/static/stable/x86_64/docker-$VER.tgz && \
     tar -xz -C /tmp -f /tmp/docker-$VER.tgz && \
     rm -rf /tmp/docker-$VER.tgz && \
