@@ -27,13 +27,15 @@ RUN cp vendor.mod go.mod && cp vendor.sum go.sum \
 FROM dhi.io/node:26-alpine3.24-dev
 
 LABEL maintainer="Matej Sychra <suculent@me.com>"
-LABEL name="THiNX Base" version="1.9.2866"
+LABEL name="THiNX Base" version="2.0.3512"
 
 # RUN adduser --system --disabled-password --shell /bin/bash thinx
 
 # Packages
 
-RUN apk add --update --no-cache openssh-client git jq zip curl bash ca-certificates openssl
+RUN apk add --update --no-cache openssh-client git jq zip curl bash ca-certificates openssl \
+    && apk add --no-cache 'libexpat>=2.8.5-r0' \
+    && apk list -I libexpat
 
 # Use the host Docker socket; only the rebuilt CLI belongs in this image.
 COPY --from=docker-cli /out/docker /usr/bin/docker
