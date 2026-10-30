@@ -35,7 +35,7 @@
     "cookie-parser": "^1.4.7",
     "dateformat": "^4.6.3",
     "express": "^5.2.1",
-    "express-rate-limit": "^8.5.1",
+    "express-rate-limit": "^8.5.2",
     "express-session": "^1.19.0",
     "fs-extra": "^11.3.3",
     "helmet": "^8.1.0",
@@ -47,7 +47,7 @@
     "moment-timezone": "0.6.0",
     "mqtt": "^5.14.1",
     "nano": "^11.0.7",
-    "node-forge": "^1.4.0",
+    "node-forge": "^1.4.2",
     "node-schedule": "^2.1.1",
     "npm-auto-version": "^1.0.0",
     "redis": "^5.8.2",
@@ -102,7 +102,7 @@
     "netmask": "2.0.2",
     "path-to-regexp": "8.4.0",
     "protobufjs": "7.1.1",
-    "serialize-javascript": "^7.0.5",
+    "serialize-javascript": "^7.1.3",
     "proxy-agent": "4.0.1",
     "string-width": "4.2.3",
     "strip-ansi": "6.0.1",
@@ -112,16 +112,16 @@
     "ws": "$ws",
     "yargs-parser": "21.1.1",
     "express-rate-limit": {
-      "ip-address": "10.7.1"
+      "ip-address": "10.7.5"
     },
     "ip-address": {
-      "ip-address": "10.7.1"
+      "ip-address": "10.7.5"
     },
     "mqtt": {
-      "ip-address": "10.7.1"
+      "ip-address": "10.7.5"
     },
     "socks": {
-      "ip-address": "10.7.1"
+      "ip-address": "10.7.5"
     }
   },
   "engines": {
