@@ -34,8 +34,8 @@ LABEL name="THiNX Base" version="2.0.3512"
 # Packages
 
 RUN apk add --update --no-cache openssh-client git jq zip curl bash ca-certificates openssl \
-    && apk add --no-cache 'libexpat>=2.8.5-r0' \
-    && apk list -I libexpat
+    && apk add --no-cache 'libexpat>=2.8.5-r0' 'c-ares>=1.34.8-r0' 'libxml2>=2.13.9-r1' \
+    && apk list -I libexpat c-ares libxml2
 
 # Use the host Docker socket; only the rebuilt CLI belongs in this image.
 COPY --from=docker-cli /out/docker /usr/bin/docker
